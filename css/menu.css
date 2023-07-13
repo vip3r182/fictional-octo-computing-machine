@@ -1,0 +1,39 @@
+.menu {
+  align-items: center;
+  color: var(--color-title);
+  display: flex;
+  font-size: 1rem;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 2rem 0 2rem;
+  width: 80%;
+}
+.menu__logo {
+  display: flex;
+  font-weight: 700;
+  gap: 0.5rem;
+}
+.menu__nav {
+  display: flex;
+  gap: 1rem;
+}
+.menu__nav__list {
+  display: flex;
+  font-weight: 500;
+  gap: 1rem;
+  justify-content: space-around;
+}
+.menu__nav__list--contato {
+  color: var(--color-title);
+  font-weight: 700;
+}
+@media screen and (max-width: 1023px) {
+  .menu__nav__list {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .menu__nav__list--contato {
+    display: none;
+  }
+}
